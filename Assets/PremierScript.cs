@@ -5,10 +5,29 @@ using UnityEngine;
 public class PremierScript : MonoBehaviour
 {
 
+    //l'objet de classe Rigidbody attaché au gameobject
+    public Rigidbody m_rigidbody;
+    public GameObject projectile;
+    public Transform parent;
+
+
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("Bonjour ! Je suis PremierScript");
+
+        for (var i = 0; i < 10; i++)
+        {
+
+            //Création d'un nouveau GameObject
+            Object.Instantiate(projectile,parent);
+
+
+        }
+
+        
+
+        //m_rigidbody.velocity = new Vector3(0,0,0);
     }
 
     // Update is called once per frame
@@ -21,22 +40,23 @@ public class PremierScript : MonoBehaviour
 
         Debug.Log(Input.GetAxis("Horizontal"));
        
-        /*
-        if (Input.GetButtonDown("Fire1"))
+        
+        if (Input.GetButton("Fire1"))
         {
       
             //z+ = vers l'avant
             this.transform.Translate(Vector3.forward);
         }
-        */
+    
     }
 
 }
 
-/*
+
 class Personne
 {
     //attributs (propriétés)
+    static int populationTotale = 250000000;
 
     //type + identifiant
     int age;
@@ -58,4 +78,3 @@ class Personne
 
     }
 }
-*/
