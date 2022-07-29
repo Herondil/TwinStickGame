@@ -15,19 +15,11 @@ public class PremierScript : MonoBehaviour
     void Start()
     {
         Debug.Log("Bonjour ! Je suis PremierScript");
-
         for (var i = 0; i < 10; i++)
         {
-
             //Création d'un nouveau GameObject
-            Object.Instantiate(projectile,parent);
-
-
+            //GameObject o = Object.Instantiate(projectile,parent);
         }
-
-        
-
-        //m_rigidbody.velocity = new Vector3(0,0,0);
     }
 
     // Update is called once per frame
@@ -49,6 +41,12 @@ public class PremierScript : MonoBehaviour
         }
     
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Colision");
+    }
+
 
 }
 
@@ -76,5 +74,10 @@ class Personne
 
 
 
+    }
+
+    void direBonjour(string interlocuteur)
+    {
+        Debug.Log("Bonjour "+interlocuteur+" !");
     }
 }
