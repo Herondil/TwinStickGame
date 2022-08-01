@@ -1119,7 +1119,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678629092}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30a4acbce1c07694ab7182d8c4449577, type: 3}
   m_Name: 
@@ -1127,6 +1127,7 @@ MonoBehaviour:
   m_rigidbody: {fileID: 1678629096}
   projectile: {fileID: 4386680591957725065, guid: 29a2960a5c831b74fa7162d2615f5956, type: 3}
   parent: {fileID: 1678629093}
+  HP: {fileID: 11400000, guid: 1579b68188b39954c90f06f17ce592e1, type: 2}
 --- !u!54 &1678629096
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1184,7 +1185,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770487295}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.911903, y: -9.732369, z: -11.022155}
+  m_LocalPosition: {x: -14.6, y: 2.51, z: -8.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
