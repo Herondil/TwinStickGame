@@ -9,6 +9,7 @@ public class PremierScript : MonoBehaviour
     public Rigidbody m_rigidbody;
     public GameObject projectile;
     public Transform parent;
+    public GeneralValues HP;
 
 
     // Start is called before the first frame update
@@ -42,12 +43,15 @@ public class PremierScript : MonoBehaviour
     
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision col)
     {
         Debug.Log("Colision");
+
+        //si on a touché un ennemi ->
+
+
+
     }
-
-
 }
 
 
